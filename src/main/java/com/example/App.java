@@ -30,6 +30,8 @@ public class App {
         doReMe.getNotes().get(5).play();
         doReMe.getNotes().get(6).play();
 
+        doReMe.play();
+
     }
 
 }
