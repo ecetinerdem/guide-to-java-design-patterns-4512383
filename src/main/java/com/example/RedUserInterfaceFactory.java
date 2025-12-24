@@ -1,6 +1,6 @@
 package com.example;
 
-public class RoadUserFactory implements UiFactory {
+public class RedUserInterfaceFactory implements UiFactory {
   @Override
   public Button createButton() {
     return new RedButton();

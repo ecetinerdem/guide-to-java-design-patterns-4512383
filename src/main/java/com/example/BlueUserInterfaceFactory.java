@@ -1,6 +1,6 @@
 package com.example;
 
-public class MountainUserFactory implements UiFactory {
+public class BlueUserInterfaceFactory implements UiFactory {
   @Override
   public Button createButton() {
     return new BlueButton();

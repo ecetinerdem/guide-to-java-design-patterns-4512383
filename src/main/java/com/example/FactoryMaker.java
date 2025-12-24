@@ -9,8 +9,8 @@ public class FactoryMaker {
   private final static Map<String, Supplier<UiFactory>> uiFactoryMap = new HashMap<>();
 
   static {
-    uiFactoryMap.put("RED", RoadUserFactory::new);
-    uiFactoryMap.put("BLUE", MountainUserFactory::new);
+    uiFactoryMap.put("RED", RedUserInterfaceFactory::new);
+    uiFactoryMap.put("BLUE", BlueUserInterfaceFactory::new);
   }
 
   public static UiFactory createFactory(String type) {
