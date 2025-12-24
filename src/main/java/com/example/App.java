@@ -4,19 +4,11 @@ public class App {
 
     public static void main(String[] args) {
 
-        var client = new Client();
-        client.connectToServer();
+        var appfacade = new AppFacade();
+        appfacade.sendMessage();
 
-        var clientServer = new ClientServer();
-        clientServer.authenticateClient();
-        clientServer.routeToRecipient();
-
-        var recipientServer = new RecipientServer();
-        recipientServer.authenticateRecipient();
-        recipientServer.sendMessage();
-
-        var recipient = new Recipient();
-        recipient.receiveMessage();
+        var sendMessageFacade = new SendMessageFacade();
+        sendMessageFacade.sendMessage();
 
     }
 
