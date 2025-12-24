@@ -2,7 +2,7 @@ package com.example;
 
 public class LocalizedMessageAdapter implements LocalizedMessage {
 
-  private static FrenchLocalizedMessage frenchLocalizedMessage;
+  private final FrenchLocalizedMessage frenchLocalizedMessage;
 
   LocalizedMessageAdapter() {
     frenchLocalizedMessage = new FrenchLocalizedMessage();
