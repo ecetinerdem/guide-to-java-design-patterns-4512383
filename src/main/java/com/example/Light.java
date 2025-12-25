@@ -2,9 +2,11 @@ package com.example;
 
 public class Light {
 
-    private boolean isOn = false;
+    private boolean isOn;
 
-
+    public Light(boolean isOn) {
+        this.isOn = isOn;
+    }
 
     public void turnOnLight() {
         isOn = true;
