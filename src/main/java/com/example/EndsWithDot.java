@@ -4,7 +4,7 @@ public class EndsWithDot implements Expression {
 
   @Override
   public String interpret(String context) {
-    if (context.endsWith(".")) {
+    if (!context.endsWith(".")) {
       context = context + ".";
     }
     return context;
