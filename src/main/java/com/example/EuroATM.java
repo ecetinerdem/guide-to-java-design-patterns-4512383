@@ -2,8 +2,17 @@ package com.example;
 
 public class EuroATM extends ATM {
 
+    public EuroATM(ATM nextAtm) {
+        super(nextAtm);
+    }
+
     @Override
     public void dispense(WithdrawalRequest request) {
-        System.out.println("Dispensing €" + request.getAmount());
+        if (request.getCurrency().equals(WithdrawalRequest.Currency.EUR)) {
+            System.out.println("Dispensing €" + request.getAmount());
+        } else if (nextAtm != null) {
+            nextAtm.dispense(request);
+        }
+
     }
 }
