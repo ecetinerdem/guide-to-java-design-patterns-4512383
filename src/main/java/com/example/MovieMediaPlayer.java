@@ -11,6 +11,7 @@ public class MovieMediaPlayer implements MediaPlayer {
         System.out.println("Playing video...");
     }
 
+    
     private void loadVideo() {
         System.out.println("Loading up large video...");
     }
