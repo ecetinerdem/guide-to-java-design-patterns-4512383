@@ -10,6 +10,13 @@ public class App {
         var canada = new Country("Canada");
         var argentina = new Country("Argentina");
 
+        var countryList = new CountryList(nigeria, canada, argentina);
+        var countryIterator = countryList.iterator();
+
+        while (countryIterator.hasNext()) {
+            System.out.println(countryIterator.next().getName());
+        }
+
     }
 
 }
